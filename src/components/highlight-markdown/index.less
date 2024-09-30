@@ -1,0 +1,39 @@
+@blurBackground: rgba(22, 119, 255, 0.5);
+@blurBackgroundHover: rgba(22, 119, 255, 0.2);
+
+.chunkText() {
+  em {
+    color: red;
+    font-style: normal;
+  }
+  table {
+    width: 100%;
+  }
+
+  caption {
+    color: @blurBackground;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  th {
+    color: #fff;
+    background-color: @blurBackground;
+  }
+
+  td:hover {
+    background: @blurBackgroundHover;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+}
+
+.text {
+  white-space: pre-wrap; // https://stackoverflow.com/questions/60332183/new-line-with-react-markdown
+  .chunkText;
+}
