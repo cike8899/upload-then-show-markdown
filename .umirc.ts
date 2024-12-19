@@ -8,7 +8,7 @@ export default defineConfig({
   npmClient: "pnpm",
   proxy: {
     "/upload": {
-      target: "http://123.60.95.134:7488/",
+      target: "http://127.0.0.1:7488/",
       changeOrigin: true,
       ws: true,
       logger: console,
